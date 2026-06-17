@@ -4,12 +4,43 @@
     vinymaia29@gmail.com
 */
 
+/* Importação Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* CSS Reset */
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+
+body{
+    font-family: "Open Sans", sans-serif;
+    /*1em tamanho da fonte padrão porem pode ser redimensionado de forma dinâmica sem distoção ou quebra de layout 1em = 16px*/
+    font-size: 1em; 
+
+}
+
+/* Layout */
+.Container{
+    /*para centralizar o conteúdo na tela*/
+    margin: 0 auto;
+    /*para visualizar melhor a centralização do layout*/
+    background-color: #7f0;
+}
+
 /* Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 /* Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 576px){
     body{
         background-color: #0ff;
+    }
+    /* Layout */
+    .Container{
+        /*define a largura máxima do dispositivo*/
+        max-width: 540px;
     }
 }
 
@@ -18,6 +49,10 @@
     body{
         background-color: #ff0;
     }
+    /* Layout */
+    .Container{
+        max-width: 720px;
+    }
 }
 
 /* Tablet Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
@@ -25,11 +60,19 @@
     body{
         background-color: #f60;
     }
+    /* Layout */
+    .Container{
+        max-width: 960px;
+    }
 }
 
 /* PC >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media(min-width: 1200px){
     body{
         background-color: #f00;
+    }
+    /* Layout */
+    .Container{
+        max-width: 1140px;
     }
 }
