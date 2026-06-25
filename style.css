@@ -31,6 +31,15 @@ body{
     background-color: #dcdcdc;
 }
 
+.Flex{
+    /* display flex deixa os itens um do lado do outro */
+    display: flex;
+    /* faz o alinhamento dos itens no container deixando espaço entre*/
+    justify-content: space-between;
+    background-color: #a9a9a9
+}
+
+
 /* topo do site */
 #topo{
     position: fixed; 
@@ -38,14 +47,17 @@ body{
     bottom: 10px; 
 }
 
-/* Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-#logo img{
-    width: 208px;
-    height: 130.25.4px;
-    margin-top: 10px;
+/* Cabeçalho */
+header{
+    height: 60px;
 }
 
-
+/* Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+#logo img{
+    width: 128px; /*208*/
+    height: 76px; /* 130.25.4 */
+    margin-top: 20px;
+}
 
 /* Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 576px){
@@ -89,5 +101,15 @@ body{
     /* Layout */
     .Container {
         max-width: 1140px;
+    }
+
+    header{
+        height: 120px;
+    }
+
+    #logo img{
+        width: 228px;
+        height: 130px;
+        margin-top: 60px;
     }
 }
